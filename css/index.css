@@ -18,26 +18,29 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-header nav .top-menu {
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .logo-main {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+header nav .top-menu ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    padding: 0;
-    width: 70%;
-    float: right;
-}
-
-#logo {
-    width: 30%;
-    float: left;
-    display: inline-block;
+    text-align: center;
 }
 
 header nav .top-menu li a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-color);
-    padding: 5px;
+    padding: 8px;
     border: 1px solid transparent;
 }
 
@@ -69,10 +72,31 @@ header nav .top-menu li a:hover {
     font-size:13px;
 }
 
+header .banner .title {
+    color: var(--accent-color);
+}
 
+@media (min-width: 600px) {
+    header .banner {
+        background-position: top;
+    }
+}
 
+main .product-list {
+	display: flex;
+	overflow:hidden;
+}
 
+main .product-list .product-card {
+    height:300px;
+	flex:20%;
+	transition: flex 300ms ease;
+	box-shadow: 0 0 19px 3px #000; margin: 1px;
+}
 
-
+main .product-list .product-card:hover {
+ 	flex: 0.1 0.1 400px;
+	background-size: 100% 100%;
+}
 
 
