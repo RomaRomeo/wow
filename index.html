@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WOW Store</title>
-    <link rel="shortcut icon" href="img/logo-footer.png" type="image/png">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-   <header>
-        <nav>
-            <div class="logo-mein">
-            <a href="index.html">
-            <img src="img/logo.png" alt="logo" width="200" height="88">
-            </a>
-            </div>
-            <div class="top-menu">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="products.html">products</a></li>
-                <li><a href="#contact">contact us</a></li>
-                <li><a href="basket.html">basket</a></li>
-            </ul>
-            </div>
-        </nav>
-        <div class="banner">
-        <h1>Welcome to WOW</h1>
-            <p> Online hardware store</p>
-		</div>
-    </header>
-    <main>
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product-list">
-                <div class="product-card">
-                    <a href="products.html">
-                    <img src="img/products-smartphone.png" alt="Foto of smartphone">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WOW Store</title>
+        <link rel="shortcut icon" href="img/logo-footer.png" type="image/png">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo-mein">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" width="200" height="88">
                     </a>
                 </div>
-                <div class="product-card">
-                    <a href="products.html">
-                    <img src="img/products-tv.png" alt="Foto of tv">
-                    </a>
+                <div class="top-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="products.html">products</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact us</a>
+                        </li>
+                        <li>
+                            <a href="basket.html">basket</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="product-card">
-                    <a href="products.html">
-                    <img src="img/products-electro.png" alt="Foto of electronics">
-                    </a>
+            </nav>
+            <div class="banner">
+                <h1>Welcome to WOW</h1>
+                <p>Online hardware store</p>
+            </div>
+        </header>
+        <main>
+            <section id="products">
+                <h2>Our Products</h2>
+                <div class="product-list">
+                    <div class="product-card">
+                        <a href="products.html">
+                            <img src="img/products-smartphone.png" alt="Foto of smartphone">
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="products.html">
+                            <img src="img/products-tv.png" alt="Foto of tv">
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="products.html">
+                            <img src="img/products-electro.png" alt="Foto of electronics">
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="products.html">
+                            <img src="img/products-all.png" alt="Foto of all products">
+                        </a>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <a href="products.html">
-                    <img src="img/products-all.png" alt="Foto of all products">
-                    </a>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <div class="contact-you">
+                    <h3>Contact</h3>
+                    <br>
+                    <form action="https://formspree.io/xaybkdeo" method="post">
+                        <label for="name">
+                            name<em>*</em>
+                        </label>
+                        <input type="text" id="name" name="user_name" required>
+                        <br>
+                        <br>
+                        <label for="mail">
+                            email<em>*</em>
+                        </label>
+                        <input type="email" id="mail" name="user_mail" required>
+                        <br>
+                        <br>
+                        <label for="phone">phone</label>
+                        <input type="tel" id="phone" name="phone">
+                        <br>
+                        <br>
+                        <label for="msg">
+                            Your message<em>*</em>
+                        </label>
+                        <textarea id="msg" name="user_message" required></textarea>
+                        <br>
+                        <br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div id="contact">
+                    <h3>Contact Us</h3>
+                    <br>
+                    <p>пр. Свободи, 1, м. Львів</p>
+                    <br>
+                    <p>(032) 261-38-38</p>
                 </div>
             </div>
-        </section>     
-    </main>
-    <footer>
-        <div class="contact">
-            <div class="contact-you">
-            <h3>Contact</h3>
-            <br>
-            <form action="https://formspree.io/xaybkdeo" method="post">
-                <label for="name">name<em>*</em></label>
-                <input type="text" id="name" name="user_name" required>
-                <br>
-                <br>
-                <label for="mail">email<em>*</em></label>
-                <input type="email" id="mail" name="user_mail" required>
-                <br>
-                <br>
-                <label for="phone">phone</label>
-                <input type="tel" id="phone" name="phone">
-                <br>
-                <br>
-                <label for="msg">Your message<em>*</em></label>
-                <textarea id="msg" name="user_message" required></textarea>
-                <br>
-                <br>
-                <button type="submit">Send</button>
-            </form>
+            <div class="logo">
+                <span>
+                    <a href="index.html">
+                        <img src="img/logo-footer.png" alt="logo" width="80" height="80">
+                    </a>
+                </span>
             </div>
-            <div id="contact">
-            <h3>Contact Us</h3>
-                <br>
-                <p>пр. Свободи, 1, м. Львів</p>
-                <br>
-                <p>(032) 261-38-38</p>
+            <div class="copyright">
+                <p>©2020 by wow store.</p>
             </div>
-        </div>
-        
-        <div class="logo">
-            <span>
-                <a href="index.html">
-            <img src="img/logo-footer.png" alt="logo" width="80" height="80">
-            </a>
-            </span>
-        </div>
-        <div class="copyright">
-            <p>©2020 by wow store.</p>
-        </div> 
-    </footer> 
-</body>
+        </footer>
+    </body>
 </html>
-   
