@@ -59,29 +59,45 @@ header nav .top-menu li a:hover {
     }
 }
 
-    header .banner {
-    background-image: url(../img/backdrop.jpg);
-    background-position: center;
-    background-size: cover;
+    header .baner {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
     min-height: 600px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 100px;
-    flex-direction: column;
-    letter-spacing:1px;
-    font-size:15px;
-    color: var(--main-bg-color);
-    text-shadow: 1px 1px 1px rgb(146, 146, 146);
+    background-image: url(../img/backdrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0;
 }
 
-header .banner .title {
-    color: var(--accent-color);
+header .baner .baner-container {
+    grid-column: 2;
+    background-color: rgba(61, 61, 59, .4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 600px) {
-    header .banner {
-        background-position: top;
+    .full-row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+header .baner h1 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+header .baner h2 {
+    margin-top: 20px;
+}
+
+@media (min-width: 400px) {
+    .text-italic {
+        font-size: 1.5rem;
     }
 }
 
