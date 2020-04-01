@@ -1,7 +1,8 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --main-color:#ffffff;
-    --accent-color: white;
+    --main-color: rgb(212, 211, 211);
+    --main-bg-color: black;
+    --accent-color: rgb(151, 151, 151);
     color: var(--main-color);
     scroll-behavior: smooth;
 }
@@ -63,13 +64,16 @@ header nav .top-menu li a:hover {
     background-image: url(../img/backdrop.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 600px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 100px;
     flex-direction: column;
     letter-spacing:1px;
-    font-size:13px;
+    font-size:15px;
+    color: var(--main-bg-color);
+    text-shadow: 1px 1px 1px rgb(146, 146, 146);
 }
 
 header .banner .title {
@@ -105,5 +109,53 @@ main .product-list .product-card img {
     }    
 }
 
+#products h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
 
+.contact {
+    display: flex;
+    padding: 20px;
+}
 
+.contact-you {
+    flex: 2;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+#contact {
+    flex: 2;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+INPUT {
+    background-color: rgb(0, 0, 0);
+    color: rgb(190, 190, 190);
+    padding: 3px;
+    border: 0.5px solid rgb(184, 182, 182);
+}
+
+#msg {
+    background-color: rgb(0, 0, 0);
+    color: rgb(190, 190, 190);
+    padding: 3px;
+    border: 0.5px solid rgb(184, 182, 182);
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
