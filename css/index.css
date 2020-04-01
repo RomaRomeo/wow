@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+.logo-mein a img {
+    width: 200px;
+    height: 80px;;
+}
+
 body {
     max-width: 980px;
     margin: auto;
@@ -32,6 +37,7 @@ header nav .logo-main {
 header nav .top-menu ul {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     list-style: none;
     text-align: center;
 }
@@ -46,6 +52,10 @@ header nav .top-menu li a {
 
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color);
+}
+
+@media (max-width: 570px) {
+    
 }
 
 @media (min-width: 500px) {
@@ -153,6 +163,14 @@ INPUT {
     color: rgb(190, 190, 190);
     padding: 3px;
     border: 0.5px solid rgb(184, 182, 182);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
 }
 
 #msg {
