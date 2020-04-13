@@ -70,40 +70,11 @@ header nav .top-menu li a:hover {
     }
 }
 
-    header .baner {
-    display: grid;
-    grid-template: 1fr/1fr 1fr;
-    min-height: 600px;
-    background-image: url(../img/backdrop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 20px 0;
-}
-
-header .baner .baner-container {
-    grid-column: 2;
-    background-color: rgba(61, 61, 59, .4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 @media (min-width: 600px) {
     .full-row {
         display: flex;
         flex-direction: row;
     }
-}
-
-header .baner h1 {
-    font-size: 2rem;
-    margin: 10px;
-}
-
-header .baner h2 {
-    margin-top: 20px;
 }
 
 @media (min-width: 400px) {
@@ -142,44 +113,6 @@ main .product-list .product-card img {
     padding: 50px;
 }
 
-.contact {
-    display: flex;
-    padding: 20px;
-}
-
-.contact-you {
-    flex: 2;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-#contact {
-    flex: 2;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-INPUT {
-    background-color: rgb(0, 0, 0);
-    color: rgb(190, 190, 190);
-    padding: 3px;
-    border: 0.5px solid rgb(184, 182, 182);
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-#msg {
-    background-color: rgb(0, 0, 0);
-    color: rgb(190, 190, 190);
-    padding: 3px;
-    border: 0.5px solid rgb(184, 182, 182);
-}
 
 footer .logo {
     display: flex;
@@ -191,4 +124,3 @@ footer .copyright {
     justify-content: center;
     padding: 50px;
 }
-
