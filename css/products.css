@@ -58,9 +58,18 @@ header nav .top-menu .nav-link {
     margin: 0;
 }
 
-/* header nav .top-menu li a:hover {
-    border: 1px solid var(--main-color);
-} */
+
+button.btn.btn-info, .btn:hover {
+    background-color: #030303;
+}
+
+.btn-info, .btn {
+    color: #fff;
+    background-color: rgb(25, 25, 25);
+    font-size: 0.765625rem;
+    border-color: #1a1a1a;
+    border: 0px solid transparent;
+}
 
 @media (min-width: 500px) {
     header nav {
@@ -96,8 +105,4 @@ footer .copyright {
     width: 50%;
     left: 25%;
     z-index: 1051;
-}
-
-.btn {
-    padding: 0.75rem 0.7rem;
 }
