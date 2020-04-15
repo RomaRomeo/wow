@@ -1,0 +1,60 @@
+[
+    
+    {
+        "id": "1",
+        "title": "Canon",
+        "image": "canonfoto.png",
+        "description": "Фотоапарат Canon EOS 4000D BK 18-55 Офіційна гарантія! (3011C004AA)",
+        "price": 344.99
+    },
+    {
+        "id": "2",
+        "title": "iPhone",
+        "image": "iphone.png",
+        "description": "Мобільний телефон Apple iPhone Xs 64GB Space Gray (MT9E2) Офіційна гарантія",
+        "price": 699.99
+    },
+    {
+        "id": "3",
+        "title": "LG",
+        "image": "lgtv.png",
+        "description": "Телевізор LG 43LM6300PLA",
+        "price": 359.99
+    },
+    {
+        "id": "4",
+        "title": "Nokia",
+        "image": "nokia.png",
+        "description": "Мобільний телефон Nokia 7.2 4/64GB Ice",
+        "price": 233.99
+    },
+    {
+        "id": "5",
+        "title": "Samsung",
+        "image": "samsungmobile.png",
+        "description": "Мобільний телефон Samsung Galaxy M31 6/128GB Blue (SM-M315FZBVSEK)",
+        "price": 277.99
+    },
+    {
+        "id": "6",
+        "title": "Samsung",
+        "image": "samsungtv.png",
+        "description": "Телевізор Samsung UE32N5300AUXUA",
+        "price": 296.99
+    },
+    {
+        "id": "7",
+        "title": "Sony",
+        "image": "sonytv.png",
+        "description": "Телевізор Sony KDL43WF805BR",
+        "price": 425.99
+    },
+    {
+        "id": "7",
+        "title": "Sony",
+        "image": "sonyvideo.png",
+        "description": "Відеокамера Sony FDRX3000 (FDRX3000.E35)",
+        "price": 444.99
+    }
+    
+]

@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 
-.logo-mein a img {
+.logo-main a img {
     width: 100%;
 }
 
@@ -15,6 +15,7 @@ body {
     max-width: 980px;
     margin: auto;
     background-color: black;
+    color: rgb(212, 211, 211);
 }
 
 h1, h2, h3, p {
@@ -50,13 +51,14 @@ header nav .top-menu li a {
     border: 1px solid transparent;
 }
 
-header nav .top-menu li a:hover {
-    border: 1px solid var(--main-color);
+header nav .top-menu .nav-link {
+    padding: 0px;
+    margin: 0;
 }
 
-@media (max-width: 570px) {
-    
-}
+/* header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+} */
 
 @media (min-width: 500px) {
     header nav {
@@ -112,73 +114,50 @@ header .baner h2 {
     }
 }
 
-main .product-list .product-card img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-@media (min-width: 580px) {
-
-    main .product-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }    
-
-}
-
-@media (min-width: 660px) {
-
-    main .product-list {
-        grid-template-columns: 1fr 1fr;
-    }    
-}
-
 #products h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    padding: 70px;
 }
 
-.contact {
-    display: flex;
-    padding: 20px;
+.contactus-one {
+    padding: 40px;
 }
 
-.contact-you {
-    flex: 2;
-    font-size: 15px;
-    letter-spacing: 2px;
+.contactus-one .contact-form .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+}
+.contactus-one .contact-form .form-control {
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+}
+.contact-info > div > p {
+    margin-bottom: 10px;
+}
+.contactus-one .contact-info p i {
+    margin-right: 15px;
+    color: #ee2b63;
 }
 
-#contact {
-    flex: 2;
-    font-size: 15px;
-    letter-spacing: 2px;
+.contactus-one .dart-headingstyle-one .dart-heading:after{
+    left:15px;
 }
 
-INPUT {
-    background-color: rgb(0, 0, 0);
-    color: rgb(190, 190, 190);
-    padding: 3px;
-    border: 0.5px solid rgb(184, 182, 182);
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-#msg {
-    background-color: rgb(0, 0, 0);
-    color: rgb(190, 190, 190);
-    padding: 3px;
-    border: 0.5px solid rgb(184, 182, 182);
+.normal-btn {
+    background: #ee2b63 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 footer .logo {

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>producrs</title>
+    <title>products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
@@ -27,70 +28,21 @@
                         <a href="index.html#contact">contact us</a>
                     </li>
                     <li>
-                        <a href="basket.html">basket</a>
+                      <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                        <i class="fas fa-shopping-cart"></i>
+                          Cart<span id="cart-badge" class="badge badge-light"></span>
+                      </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="all-products">
-            <h2>Our Products</h2>
-            <div class="smartphones">
-                <div class="nokia">
-                    <p>Мобільний телефон Nokia 7.2 4/64GB Ice</p>
-                    <figure>
-                    <img src="img/nokia.png" alt="Foto of nokia">
-                    </figure>
-                </div>
-                <div class="samsung-mobile">
-                    <p>Мобільний телефон Samsung Galaxy A51</p>
-                    <figure>
-                    <img src="img/samsungmobile.png" alt="Foto of samsung">
-                    </figure>
-                </div>
-                <div class="iphone">
-                    <p>Мобільний телефон Apple iPhone Xs</p>
-                    <figure>
-                    <img src="img/iphone.png" alt="Foto of iphone">
-                    </figure>   
-                </div>
-            </div> 
-            <div class="tv">
-                <div class="samsung-tv">
-                    <p>Телевізор Samsung UE43</p>
-                    <figure>
-                    <img src="img/samsungtv.png" alt="Foto of samsungtv">
-                    </figure>
-                </div>
-                <div class="lg">
-                    <p>Телевізор LG 43LM</p>
-                    <figure>
-                    <img src="img/lgtv.png" alt="Foto of lgtv">
-                    </figure>    
-                </div>
+    <main class="container">
+        <section>
+            <h2 id="products">Products</h2>
+            <div class="row products-container">
             </div>
-            <div class="electronics">
-                <div class="canon">
-                    <p>Фотоапарат Canon EOS 77D</p>
-                    <figure>
-                    <img src="img/canonfoto.png" alt="Foto of canon">
-                    </figure>       
-                </div>
-                <div class="sony">
-                    <p>Відеокамера Sony FDRX3000</p>
-                    <figure>
-                    <img src="img/sonyvideo.png" alt="Foto of sony">
-                    </figure> 
-                </div>
-                <div class="yamaha">
-                    <p>Yamaha Set NS-51</p>
-                    <figure>
-                    <img src="img/yamahaaudio.png" alt="Foto of yamaha">
-                    </figure>
-                </div>   
-            </div>              
-        </section>  
+        </section>
     </main>
     <footer> 
         <div class="logo">
@@ -104,6 +56,72 @@
             <p>©2020 by wow store.</p>
         </div>
     </footer>
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+  
+  
+      <script async src="js/alert-window.js"></script>
+      <script defer src="js/products-service.js"></script>
+      <script defer src="js/cart.js"></script>
+      <script defer src="js/product-list.js"></script>    
+      <script defer src="js/index.js"></script>
+
 </body>
 </html>
    

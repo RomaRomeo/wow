@@ -1,0 +1,1 @@
+{"clientName":"John","clientEmail":"john_brown@ukr.net","cart":{"2":1}}
