@@ -144,7 +144,7 @@ header .baner h2 {
 }
 .contactus-one .contact-info p i {
     margin-right: 15px;
-    color: #ee2b63;
+    color:#ee2b63;
 }
 
 .contactus-one .dart-headingstyle-one .dart-heading:after{
@@ -171,15 +171,4 @@ footer .copyright {
     padding: 50px;
 }
 
-/* body { 
-    font-weight: 300;
-    text-align: center;
-    height: 150vh;
-  }
-  h2 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
 
