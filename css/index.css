@@ -1,9 +1,6 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --main-color: rgb(212, 211, 211);
-    --main-bg-color: black;
-    --accent-color: rgb(151, 151, 151);
-    color: var(--main-color);
+    --main-color: rgb(212, 211, 211); --main-bg-color: black; --accent-color: rgb(151, 151, 151); color: var(--main-color);
     scroll-behavior: smooth;
 }
 
@@ -56,23 +53,19 @@ header nav .top-menu .nav-link {
     margin: 0;
 }
 
-/* header nav .top-menu li a:hover {
-    border: 1px solid var(--main-color);
-} */
-
 @media (min-width: 500px) {
     header nav {
-    display: grid;
-    grid-template-columns: 3fr 7fr;
-    align-items: center;
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        align-items: center;
     }
 
-     header .top-menu {
+    header .top-menu {
         flex: 1;
     }
 }
 
-    header .baner {
+header .baner {
     display: grid;
     grid-template: 1fr/1fr 1fr;
     min-height: 600px;
@@ -135,20 +128,23 @@ header .baner h2 {
     color: #fff;
     height: 50px;
 }
+
 .contactus-one .contact-form .form-control {
     border-bottom: 1px solid #ccc;
     box-shadow: none;
 }
+
 .contact-info > div > p {
     margin-bottom: 10px;
 }
+
 .contactus-one .contact-info p i {
     margin-right: 15px;
-    color:#ee2b63;
+    color: #ee2b63;
 }
 
-.contactus-one .dart-headingstyle-one .dart-heading:after{
-    left:15px;
+.contactus-one .dart-headingstyle-one .dart-heading:after {
+    left: 15px;
 }
 
 .normal-btn {
@@ -170,5 +166,3 @@ footer .copyright {
     justify-content: center;
     padding: 50px;
 }
-
-

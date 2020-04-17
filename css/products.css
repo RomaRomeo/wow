@@ -1,9 +1,6 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --main-color: rgb(212, 211, 211);
-    --main-bg-color: black;
-    --accent-color: rgb(151, 151, 151);
-    color: var(--main-color);
+    --main-color: rgb(212, 211, 211); --main-bg-color: black; --accent-color: rgb(151, 151, 151); color: var(--main-color);
     scroll-behavior: smooth;
 }
 
@@ -58,7 +55,6 @@ header nav .top-menu .nav-link {
     margin: 0;
 }
 
-
 button.btn.btn-info, .btn:hover {
     background-color: #030303;
 }
@@ -73,12 +69,12 @@ button.btn.btn-info, .btn:hover {
 
 @media (min-width: 500px) {
     header nav {
-    display: grid;
-    grid-template-columns: 3fr 7fr;
-    align-items: center;
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        align-items: center;
     }
 
-     header .top-menu {
+    header .top-menu {
         flex: 1;
     }
 }
@@ -101,7 +97,7 @@ footer .copyright {
 
 .alert {
     position: fixed;
-    top: 50px; 
+    top: 50px;
     width: 50%;
     left: 25%;
     z-index: 1051;
